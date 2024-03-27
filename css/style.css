@@ -1397,27 +1397,6 @@ textarea.input {
     width: 100%;
     position: absolute;
 }
-@-webkit-keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-840px * 2.5));
-        transform: translateX(calc(-840px * 2.5));
-    }
-}
-
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-    100% {
-        -webkit-transform: translateX(calc(-840px * 2.5));
-        transform: translateX(calc(-840px * 2.5));
-    }
-}
 
 .slider {
     background: pr;
@@ -1452,10 +1431,10 @@ textarea.input {
 }
 
 .slider .slide-track {
-    -webkit-animation: scroll 15s linear infinite;
-    animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 5s linear infinite;
+    animation: scroll 5s linear infinite;
     display: flex;
-    width: calc(540px * 11.4);
+    width: calc(1950px * 2);
     /* height: calc(103px * 1); */
 }
 
@@ -1467,4 +1446,25 @@ textarea.input {
 .imgstyle {
     width: 100%;
     padding: 0px 5px 0px 5px;
+}
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-1950px * 1));
+        transform: translateX(calc(-1950px * 1));
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-1950px * 1));
+        transform: translateX(calc(-1950px * 1));
+    }
 }
